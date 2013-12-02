@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Demo Responsive Util &mdash; jQuery plugin</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="JQuery_responsive_util.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(document).responsive_util()
+		})
+	</script>
+</head>
+<body>
+	<h2>Available console commands</h2>
+	<p>
+	<ul>
+		<li><b>$.fn.responsive_util.hide()</b> &mdash; Hides the context indicator</li>	
+		<li><b>$.fn.responsive_util.show()</b> &mdash; Shows the context indicator</li>	
+	</ul>
+	</p>
+
+	<h3>Configurable Options</h3>
+	<p>
+		<ul>
+			<li><b>timer:</b> integer - millesconds before the $.fn.responsive_util.hide() function is called to auto-hide the context indicator<br><em>Example:</em> { timer: 1000 } = one second delay</li>
+		</ul>
+	</p>
+
+</body>
+</html>
