@@ -6,6 +6,10 @@
     $('head').append(settings.styles);
     $('body').append(settings.nodes);
 
+    if(settings.timer) {
+      setTimeout($.fn.responsive_util.hide, settings.timer)
+    }
+
     console.log('responsive_util: loaded');
     return this;  
 
