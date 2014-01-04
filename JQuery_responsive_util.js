@@ -3,8 +3,10 @@
   $.fn.responsive_util = function( options ) {
     var settings = $.extend(true, {}, $.fn.responsive_util.defaults, options )
 
-    $('head').append(settings.styles);
-    $('body').append(settings.nodes);
+    $('head').append(settings.styles)
+    $('body').append(settings.nodes)
+    //currently, this plugin requires that the indicators be encapsulated by a DIV element with ID="responsive-check"
+    $('#responsive-check').on('dblclick', $.fn.responsive_util.destroy)
 
     if(settings.timer) {
       setTimeout($.fn.responsive_util.hide, settings.timer)
@@ -32,9 +34,11 @@
   }
 
   $.fn.responsive_util.destroy = function(){ 
+    $('#responsive-check').off('dblclick', $.fn.responsive_util.destroy)
     $('#responsive-check').remove()
     $('#responsive-style').remove()
     $.fn.responsive_util = undefined //not sure is this line is a good idea
+    console.log('responsive_util: destroyed');
   }
 
   
