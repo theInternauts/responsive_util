@@ -16,7 +16,7 @@
     return this;  
 
   };
-
+  
   $.fn.responsive_util.defaults = {
     media: [{name:'tablet',min:35,max:70,color:'red'},{name:'phone',max:34.99,color:'black'},{name:'screen',min:70.01,color:'blue'}],
     colors: [],
@@ -40,7 +40,5 @@
     $.fn.responsive_util = undefined //not sure is this line is a good idea
     console.log('responsive_util: destroyed');
   }
-
-  
 
 })( jQuery, window, document );

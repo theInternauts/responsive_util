@@ -9,7 +9,8 @@ This is a quick and dirty jQuery plugin to place a small HTML DOM box in on a wo
 *(in no particular order)*
 + proper documentation
 + proper usage examples
-+ feature to click the indicator to cycle through the media query widths
++ denote landscape and portrait orientations
++ feature to click the indicator to cycle through the media query widths and resize window accordingly
 + create options to change position of the context indicator -- maybe on a right+click?
 + consider a templating engine (probably overkill)
 + console functions for realtime threshold changes (I don't know about this)
