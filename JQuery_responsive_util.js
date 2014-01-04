@@ -12,19 +12,6 @@
 
     $.fn.responsive_util = function() {
         
-        // your plugin logic
-        /**
-        1. create DOM nodes
-        2. create CSS
-        3. create console functions for enabling and disabling on the fly
-        4. detect prexisting media quries OR set default media queries if they aren't found
-        5. allow for options object to override defaults (including adding fewer OR extra media contexts)
-        6. need function to destroy DOM nodes, CSS entries, <script> include, and JS objects -- FULL DESTROY command
-        7. maybe have that destroy be set on a time for testing and then it executes--this should be setable in the OPTIONS object
-        8. maybe set an option to look for a flag in the session cookie to be visibly only when a specific variable is present. -- this will allow for integration with certain CMSs (Drupal, WordPress, Concrete 5, etc.)
-        
-
-        **/
         //I'll incorporate this OPTIONS object later.
         var options = {};
         var nodes = "<div id='responsive-check'><div class='msg' id='screen'><p>screen</p></div><div class='msg' id='tablet'><p>tablet</p></div><div class='msg' id='phone'><p>phone</p></div></div>";
