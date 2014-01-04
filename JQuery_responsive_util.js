@@ -23,4 +23,4 @@
         return this;  
 
   };
-})( jQuery );
+})( jQuery, window, document );
