@@ -2,7 +2,7 @@
     var setMediaQueries = function(media){
         console.log('QUERY | ' + media);
     };
-    var defaults = {
+    $.fn.responsive_util.defaults = {
         media: [{name:'tablet',min:35,max:70,color:'red'},{name:'phone',max:34.99,color:'black'},{name:'screen',min:70.01,color:'blue'}],
         colors: [],
         size: 0.5,
